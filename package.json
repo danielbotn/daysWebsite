@@ -22,7 +22,8 @@
     "watch:webpack": "webpack --mode development --watch",
     "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "watch": "npm-run-all clean --parallel watch:*",
-    "start": "npm run watch"
+    "start": "npm run watch",
+    "brow": "browserify app.js -o bundle.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
@@ -34,6 +35,7 @@
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "browserify": "^17.0.0",
     "cross-env": "^7.0.2",
     "crypto": "^1.0.1",
     "cssnano": "^4.1.10",
@@ -61,7 +63,6 @@
   },
   "dependencies": {
     "alpinejs": "^2.7.0",
-    "focus-visible": "^5.1.0",
-    "vanilla-js-carousel": "^3.1.2"
+    "focus-visible": "^5.1.0"
   }
 }

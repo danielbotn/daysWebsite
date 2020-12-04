@@ -21,22 +21,6 @@
         {% include "footer.njk" %}
     </div>
     <script src="{{ '/assets/main.js' | url }}" defer></script>
-    <script type="text/javascript">
-        async function sendEmail() {
-            const firstName = document.getElementById('grid-first-name').value;
-            const lastName = document.getElementById('grid-last-name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            if (firstName && lastName && email && message) {
-                const response = await fetch('https://api.chucknorris.io/jokes/random');
-                const myJson = await response.json(); //extract JSON from the http response
-                console.log('myJson', myJson);
-            } else {
-
-            }
-        }
-    </script>
      {# LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} #}
 </body>
 </html>

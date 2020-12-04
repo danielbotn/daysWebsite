@@ -6,12 +6,12 @@
 @import 'tailwindcss/utilities';
 
 .carousel {
-  position: relative;
+  position: absolute;
   margin-top: 26px;
 }
 
 .carousel-inner {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   width: 100%;
 }
@@ -59,7 +59,7 @@
 }
 
 .carousel-control.next {
-  right: 58%;
+  right: 2%;
 }
 
 .carousel-control:hover {
@@ -78,8 +78,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-  bottom: 2%;
+  position: sticky;
+  bottom: 11%;
   left: 0;
   right: 350px;
   text-align: center;

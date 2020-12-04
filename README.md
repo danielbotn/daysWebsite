@@ -1,17 +1,16 @@
-# Eleventy Starter
+# Days website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b8df50f-2855-4db2-968f-a0e9a4221c83/deploy-status)](https://app.netlify.com/sites/ess-eleventy-starter/deploys)
+Days is a mobile application written in react native. The source code for that project will be open sourced soon. On the other hand, this project is a "static" website to advertise the mobile app.
 
-Demo: https://ess-eleventy-starter.netlify.app
-
-Eleventy Starter is a project scaffold for quickly starting a site with:
+This project was scaffolded with the Eleventy Starter. 11ty is a static site generator. With the help of a few other tools listed below, 11ty has been turned into a reactive javascript framework, like react or angular.  
+The following technology is used in the project:
 
 - [Eleventy](https://11ty.dev) for templates and site generation.
 - [Webpack](https://webpack.js.org) for straightforward JS asset bundling.
 - [Alpine JS](https://github.com/alpinejs/alpine) A rugged, minimal framework for composing JavaScript behavior in your markup.
 - [Tailwindcss](https://tailwindcss.com) for a utility first CSS workflow.
 - [PurgeCSS](https://www.purgecss.com/) for optimizing css output.
-- [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for Netlify dev pipeline and local replication of the prod environment.
+- [Nunjucks](https://mozilla.github.io/nunjucks/) A template engine similar to pug or ejs
 
 ## Deploy this to your own site
 
@@ -65,12 +64,4 @@ Netlify's Redirects API can provide friendlier URLs as proxies to these URLs.
 
 ---
 
-## Credits
 
-My heartfelt thanks to these people, whom I shamelessly copied code and ideas from:
-
-- Phil Hawksworth: [EleventyOne](https://github.com/philhawksworth/eleventyone)
-- Mike Riethmuller: [Supermaya](https://github.com/MadeByMike/supermaya)
-- Zach Leatherman: [zachleat.com](https://github.com/zachleat/zachleat.com)
-- Max Böck [Eleventastic](https://github.com/maxboeck/eleventastic)
-- Greg Ives [Twelvety](https://github.com/gregives/Twelvety)
