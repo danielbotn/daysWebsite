@@ -1,6 +1,6 @@
 # Days website
 
-![Days Logo](https://i.paste.pics/9f7f1e6e3c7503951630aab3e25b8393.png?trs=4a0b9b496eae9de3cfbd5ffa25533aba3f76cdb64fe5c959f8f6dcebbb4ba7e8)
+![Days Logo](https://i.paste.pics/77b99e903c4bb4b3163676212432c419.png?trs=4a0b9b496eae9de3cfbd5ffa25533aba3f76cdb64fe5c959f8f6dcebbb4ba7e8)
 
 [Click here to go to Days Demo website](http://stale-acoustics.surge.sh/)
 
