@@ -63,6 +63,8 @@
   },
   "dependencies": {
     "alpinejs": "^2.7.0",
-    "focus-visible": "^5.1.0"
+    "envify": "^4.1.0",
+    "focus-visible": "^5.1.0",
+    "lodash": "^4.17.20"
   }
 }

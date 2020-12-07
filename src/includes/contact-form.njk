@@ -35,114 +35,17 @@
   <div class="md:flex md:items-center">
     <div class="md:w-1/3">
       <button @click="firstNameError = true; sendEmail()" class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-        Send
+        <div class="loader" x-show="buttonClicked"></div>
+        <p x-show="!buttonClicked">Send</p>
       </button>
     </div>
   </div>
   <p class="text-red-500 text-xs italic pt-10" x-show="serverError">Oops, server error.</p>
+  <p class="text-green-500 font-bold pt-10" x-show="successPopup">Thank you for contacting us!</p>
 </form>
+{% set js %}
+  {% include "../../bundle.js" %}
+{% endset %}
 <script>
- function states() {
-  return {
-    inputTypeFN: "",
-    firstNameError: false,
-    lastNameError: false,
-    emailError: false,
-    messageError: false,
-    show: false,
-    serverError: false,
-    firstNameErrorTrue() {
-      this.firstNameError = true;
-    },
-    firstNameErrorFalse() {
-      this.firstNameError = false;
-    },
-    lastNameErrorTrue() {
-      this.lastNameError = true;
-    },
-    lastNameErrorFalse() {
-      this.lastNameError = false;
-    },
-    emailErrorFalse() {
-      this.emailError = false;
-    },
-    emailErrorTrue() {
-      this.emailError = true;
-    },
-    emailIsValid(email) {
-      return /\S+@\S+\.\S+/.test(email);
-    },
-    messageErrorFalse() {
-      this.messageError = false;
-    },
-    messageErrorTrue() {
-      this.messageError = true;
-    },
-    serverErrorTrue() {
-      this.serverError = true;
-    },
-    serverErrorFalse() {
-      this.serverError = false;
-    },
-    encryptText(str) {
-      return str;
-    },
-    async sendEmail() {
-      const firstName = document.getElementById("grid-first-name").value;
-      const lastName = document.getElementById("grid-last-name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-
-      if (
-        firstName &&
-        lastName &&
-        message &&
-        email &&
-        this.emailIsValid(email)
-      ) {
-        this.firstNameErrorFalse();
-        this.lastNameErrorFalse();
-        this.emailErrorFalse();
-        this.messageErrorFalse();
-        const bodyParameters = {
-          email: email,
-          message: message,
-        };
-        const response = await fetch(
-          "https://days-rest-api.herokuapp.com/email/contactUs",
-          {
-            method: "post",
-            headers: new Headers({
-              'Authorization': `Bearer ${this.encryptText('dude')}`, //DAYS_SECRET_KEY
-              'Content-Type': 'application/x-www-form-urlencoded'
-            }), 
-            body: JSON.stringify(bodyParameters),
-            headers: { "Content-type": "application/json" },
-          }
-        );
-  
-        const myJson = await response.json(); //extract JSON from the http response
-        if (myJson.statusCode === 200) {
-          this.serverErrorFalse();
-        } else {
-          this.serverErrorTrue();
-        }
-        console.log("myJson", myJson);
-      } else {
-        if (!firstName) {
-          this.firstNameErrorTrue();
-        }
-        if (!lastName) {
-          this.lastNameErrorTrue();
-        }
-        if (!email || !this.emailIsValid(email)) {
-          this.emailErrorTrue();
-        }
-        if (!message) {
-          this.messageErrorTrue();
-        }
-      }
-    },
-  };
-}
+  {{ js | safe }}
 </script>
