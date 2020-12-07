@@ -12,13 +12,6 @@ The following technology is used in the project:
 - [PurgeCSS](https://www.purgecss.com/) for optimizing css output.
 - [Nunjucks](https://mozilla.github.io/nunjucks/) A template engine similar to pug or ejs
 
-## Deploy this to your own site
-
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
-
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/eastslopestudio/eleventy-starter)
-- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=eastslopestudio%2Feleventy-starter)
-
 ---
 
 ## Prerequisites
@@ -29,9 +22,6 @@ These builders are amazing—try them out to get your own Eleventy site in a few
 ## Running locally
 
 ```bash
-# Create your project
-npx degit "eastslopestudio/eleventy-starter" my-app && cd my-app
-
 # install the project dependencies
 npm install
 
@@ -60,19 +50,3 @@ npm run build
 # For production deployment on surge
 surge dist
 ```
-
-Serverless functions are located in `src/functions`
-
-A serverless functions pipeline is included via Netlify Dev. By running `netlify dev` you'll be able to execute any of your serverless functions directly like this:
-
-- /.netlify/functions/hello
-
-### Redirects and proxies
-
-Netlify's Redirects API can provide friendlier URLs as proxies to these URLs.
-
-- /api/hello
-
----
-
-
