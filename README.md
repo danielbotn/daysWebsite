@@ -1,7 +1,8 @@
 # Days website
 
-This website is running on the following demo link:
-[Click here to go to Days website](http://stale-acoustics.surge.sh/)
+![alt text](https://pasteboard.co/JDR4j9o.jpg "Days Logo")
+
+[Click here to go to Days Demo website](http://stale-acoustics.surge.sh/)
 
 Days is a mobile application written in react native. The source code for that project will be open sourced soon. On the other hand, this project is a "static" website to advertise the mobile app.
 
