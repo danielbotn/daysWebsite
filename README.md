@@ -1,5 +1,8 @@
 # Days website
 
+This website is running on the following demo link:
+[Click here to go to Days website](http://stale-acoustics.surge.sh/)
+
 Days is a mobile application written in react native. The source code for that project will be open sourced soon. On the other hand, this project is a "static" website to advertise the mobile app.
 
 This project was scaffolded with the Eleventy Starter. 11ty is a static site generator. With the help of a few other tools listed below, 11ty has been turned into a reactive javascript framework, like react or angular.  
