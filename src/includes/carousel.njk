@@ -1,4 +1,4 @@
-<div x-data="{items: ['home-screen-android3.png','medication-android3.png','walk-the-dog-android.png'], active: 0}">
+<div x-data="{items: ['home-screen-android3.png','medication-android3.png','walk-the-dog-android.png', 'shopping-list-android.png'], active: 0}">
     <div class="snap overflow-auto relative flex-no-wrap flex transition-all" x-ref="slider"
         x-on:scroll.debounce="active = Math.round($event.target.scrollLeft / ($event.target.scrollWidth / items.length))">
         <template x-for="(item,index) in items" :key="index">
