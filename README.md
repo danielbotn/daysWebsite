@@ -21,7 +21,6 @@ The following technology is used in the project:
 ## Prerequisites
 
 - [Node and NPM](https://nodejs.org/)
-- [Netlify CLI](https://www.npmjs.com/package/netlify-cli) _optional_
 
 ## Running locally
 
