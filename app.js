@@ -113,19 +113,17 @@ window.states = function() {
         this.lastNameErrorFalse();
         this.emailErrorFalse();
         this.messageErrorFalse();
-        const bodyParameters = {
-          email: email,
-          message: message,
-        };
+        // localhost --> https://localhost:3000/email/contactUs
+        // production --> https://days-rest-api.herokuapp.com/email/contactUs
         const response = await fetch(
-          "https://days-rest-api.herokuapp.com/email/contactUs",
+          "http://localhost:3000/email/contactUs",
           {
             method: "post",
             headers: new Headers({
               'Authorization': `Bearer ${this.encryptText(process.env.DAYS_SECRET_KEY)}`,
-              'Content-Type': 'application/x-www-form-urlencoded'
+              'Content-Type': 'application/json'
             }), 
-            body: JSON.stringify(bodyParameters),
+            body: JSON.stringify({email: email, message: message}),
           }
         );
   
