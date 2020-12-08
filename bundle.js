@@ -838,7 +838,7 @@ window.states = function() {
         // localhost --> https://localhost:3000/email/contactUs
         // production --> https://days-rest-api.herokuapp.com/email/contactUs
         const response = await fetch(
-          "http://localhost:3000/email/contactUs",
+          "https://days-rest-api.herokuapp.com/email/contactUs",
           {
             method: "post",
             headers: new Headers({
