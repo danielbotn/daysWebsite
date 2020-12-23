@@ -1,8 +1,12 @@
 # Days website
 
+<div align="center">
+
 ![Days Logo](http://stale-acoustics.surge.sh/assets/images/favicon/daysLogoMini.png)
 
 [Click here to go to Days Demo website](http://stale-acoustics.surge.sh/)
+
+</div>
 
 <p align="center" color="#6a737d">
   A simple static website used to display information about a mobile app.
