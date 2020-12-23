@@ -1,8 +1,6 @@
-# Days website
-
 <div align="center">
 
-![Days Logo](http://stale-acoustics.surge.sh/assets/images/favicon/daysLogoMini.png)
+![Days Logo](https://i.ibb.co/MGYRd2t/days-github-logo.png)
 
 [Click here to go to Days Demo website](http://stale-acoustics.surge.sh/)
 
